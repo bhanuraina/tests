@@ -5,3 +5,12 @@ services:
 script:
   - docker build -t bhanu/node .
   - docker images bhanu/node    
+
+before_deploy:
+  - docker login -u bhanuraina -p james12#
+
+deploy:
+  provider: script
+  script: docker push bhanu/node
+  on:
+    branch: master
