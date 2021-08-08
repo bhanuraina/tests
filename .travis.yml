@@ -11,6 +11,6 @@ before_deploy:
 
 deploy:
   provider: script
-  script: docker push bhanu/node
+  script: docker push bhanuraina/node
   on:
     branch: master
