@@ -3,8 +3,8 @@ services:
   - docker
 
 script:
-  - docker build -t bhanu/node .
-  - docker images bhanu/node    
+  - docker build -t bhanuraina/node .
+  - docker images bhanuraina/node    
 
 before_deploy:
   - docker login -u bhanuraina -p james12#
